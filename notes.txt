@@ -1,0 +1,28 @@
+---starts db server---
+sudo systemctl start mongod
+
+-- shows status of db server ---
+ sudo systemctl status mongod
+
+-- stops db server ---
+sudo systemctl stop mongod
+
+--- mongosh cli commands --
+mongosh: opens up mongo shell
+show dbs: shows database
+use [table]: switches to specific table
+
+
+--- CRUD OPERATIONS ---
+Create
+	- db.collectionName.insertOne(document)
+	- db.collectionName.insertMany(list of document)
+Read
+	- db.collectionName.findOne(document)
+	- db.collectionName.find(document)
+Update
+	- db.collectionName.updateOne(document, projection)
+	- db.collectionName.updateMany(document, projection)
+Delete
+	- db.collectionName.deleteOne(document)
+	- db.collectionName.deleteMany(document) 
